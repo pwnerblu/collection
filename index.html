@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iOS Collection | pwnerblu</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #2b0a3d, #6a0dad);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .device {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 16px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .device:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .device h2 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+    }
+
+    .row {
+      margin: 6px 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .label {
+      font-weight: bold;
+      opacity: 1;
+    }
+
+    .status {
+      padding: 2px 8px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      display: inline-block;
+    }
+
+    .locked {
+      background: rgba(255, 80, 80, 0.25);
+    }
+
+    .unlocked {
+      background: rgba(80, 255, 160, 0.25);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #ffd6ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>iOS Device Collection</h1>
+    <p>A list of devices I have in my collection.</p>
+  </header>
+
+  <div class="container">
+    
+    <div class="device">
+      <h2>iPad 1</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad1,1</div>
+      <div class="row"><span class="label">Storage:</span> 32GB</div>
+      <div class="row"><span class="label">Condition:</span> Rough condition.</div>
+      <div class="row"><span class="label">iOS:</span> 7.1.2</div>
+    </div>
+    <div class="device">
+      <h2>iPod touch 4</h2>
+
+      <div class="row"><span class="label">Model:</span> iPod4,1</div>
+      <div class="row"><span class="label">Storage:</span> 32GB</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition.</div>
+      <div class="row"><span class="label">iOS:</span> 6.1.6</div>
+    </div>
+    <div class="device">
+      <h2>iPad mini</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad2,5</div>
+      <div class="row"><span class="label">Storage:</span> 16GB</div>
+      <div class="row"><span class="label">Color:</span> Silver</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition. Cracked screen</div>
+      <div class="row"><span class="label">iOS:</span> 7.0.3</div>
+    </div>
+    <div class="device">
+      <h2>iPad mini</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad2,5</div>
+      <div class="row"><span class="label">Storage:</span> 16GB</div>
+      <div class="row"><span class="label">Color:</span> Silver</div>
+      <div class="row"><span class="label">Condition:</span> Rough condition. Cracked screen</div>
+      <div class="row"><span class="label">iOS:</span> 9.3.5</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 5S</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone6,1</div>
+      <div class="row"><span class="label">Storage:</span> 16GB</div>
+      <div class="row"><span class="label">Color:</span> Silver</div>
+      <div class="row"><span class="label">Condition:</span> Rough condition. Device is fully functional</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 12.5.8</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 5S</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone6,1</div>
+      <div class="row"><span class="label">Storage:</span> 32GB</div>
+      <div class="row"><span class="label">Color:</span> Space Gray</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition. Device is fully functional</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Locked to AT&T</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 12.5.8</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 6</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone7,2</div>
+      <div class="row"><span class="label">Storage:</span> 16GB</div>
+      <div class="row"><span class="label">Color:</span> Space Gray</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 10.3.2</div>
+    </div>
+    <div class="device">
+      <h2>iPad mini 4</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad5,1</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Space Gray</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition.</div>
+      <div class="row"><span class="label">iOS:</span> 15.8.8</div>
+    </div>
+    <div class="device">
+      <h2>iPad Air 2</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad5,3</div>
+      <div class="row"><span class="label">Storage:</span> 64GB</div>
+      <div class="row"><span class="label">Color:</span> Silver</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition.</div>
+      <div class="row"><span class="label">iOS:</span> 15.8.8</div>
+    </div>
+    <div class="device">
+      <h2>iPod touch 6</h2>
+
+      <div class="row"><span class="label">Model:</span> iPod7,1</div>
+      <div class="row"><span class="label">Storage:</span> 16GB</div>
+      <div class="row"><span class="label">Color:</span> Blue</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition.</div>
+      <div class="row"><span class="label">iOS:</span> 12.5.8</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 6S</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone8,1</div>
+      <div class="row"><span class="label">Storage:</span> 64GB</div>
+      <div class="row"><span class="label">Color:</span> Silver</div>
+      <div class="row"><span class="label">Condition:</span> Decent condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 12.2</div>
+    </div>
+    <div class="device">
+      <h2>iPhone SE</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone8,4</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Silver</div>
+      <div class="row"><span class="label">Condition:</span> Decent condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Locked to AT&T</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 13.6.1</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 7</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone9,3</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Matte Black</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 15.7.3</div>
+    </div>
+    <div class="device">
+      <h2>iPad 6</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad7,6</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Space Gray</div>
+      <div class="row"><span class="label">Condition:</span> Okay condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 17.7.11</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 8</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone10,1</div>
+      <div class="row"><span class="label">Storage:</span> 64GB</div>
+      <div class="row"><span class="label">Color:</span> Space Gray</div>
+      <div class="row"><span class="label">Condition:</span> Rough condition. Device is fully functional</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 16.7.16</div>
+    </div>
+    <div class="device">
+      <h2>iPhone X</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone10,3</div>
+      <div class="row"><span class="label">Storage:</span> 64GB</div>
+      <div class="row"><span class="label">Color:</span> Space Gray</div>
+      <div class="row"><span class="label">Condition:</span> Alright condition. Screen has significant burn-in</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 16.7.16</div>
+    </div>
+    <div class="device">
+      <h2>iPhone XR</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone11,8</div>
+      <div class="row"><span class="label">Storage:</span> 64GB</div>
+      <div class="row"><span class="label">Color:</span> Product Red</div>
+      <div class="row"><span class="label">Condition:</span> Partially rough condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 14.8.1</div>
+    </div>
+    <div class="device">
+      <h2>iPhone XR</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone11,8</div>
+      <div class="row"><span class="label">Storage:</span> 64GB</div>
+      <div class="row"><span class="label">Color:</span> Yellow</div>
+      <div class="row"><span class="label">Condition:</span> Extremely rough condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 18.7.9</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 12 Pro Max</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone13,4</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Pacific Blue</div>
+      <div class="row"><span class="label">Condition:</span> Good condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 26.4.2</div>
+    </div>
+    <div class="device">
+      <h2>iPad Pro (12.9-inch, 5th generation)</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad13,10</div>
+      <div class="row"><span class="label">Storage:</span> 512GB</div>
+      <div class="row"><span class="label">Color:</span> Space Gray</div>
+      <div class="row"><span class="label">Condition:</span> Kinda rough condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 16.2</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 13</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone14,5</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Blue</div>
+      <div class="row"><span class="label">Condition:</span> Back glass is shattered and the device itself is in rough shape</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 18.6.2</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 13 Pro</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone14,2</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Gold</div>
+      <div class="row"><span class="label">Condition:</span> Nearly mint condition.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Locked to Verizon</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 15.3</div>
+    </div>
+    <div class="device">
+      <h2>iPhone 13 Pro Max</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone14,3</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Sierra Blue</div>
+      <div class="row"><span class="label">Condition:</span> Back glass is shattered and the camera is not fully functional</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 27.0 developer beta 1</div>
+    </div>
+
+    <div class="device">
+      <h2>iPhone 13 Pro Max</h2>
+
+      <div class="row"><span class="label">Model:</span> iPhone14,3</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Sierra Blue</div>
+      <div class="row"><span class="label">Condition:</span> Rough condition. Camera works but gets blurry after 3x.</div>
+      <div class="row">
+        <span class="label">Carrier:</span>
+        <span class="status unlocked">Unlocked</span>
+      </div>
+      <div class="row"><span class="label">iOS:</span> 16.2</div>
+    </div>
+    <div class="device">
+      <h2>iPad Pro (11-inch, 4th generation)</h2>
+
+      <div class="row"><span class="label">Model:</span> iPad14,3</div>
+      <div class="row"><span class="label">Storage:</span> 128GB</div>
+      <div class="row"><span class="label">Color:</span> Silver</div>
+      <div class="row"><span class="label">Condition:</span> Very good condition.</div>
+      <div class="row"><span class="label">iOS:</span> 26.2</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="https://pwnerblu.github.io">← Back to main site</a>
+  </footer>
+
+</body>
+</html>
